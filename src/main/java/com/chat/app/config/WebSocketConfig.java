@@ -20,7 +20,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void configureMessageBroker(MessageBrokerRegistry registry) {
         // set message broker
-        // expect message with /app/sendmessage
+        // expect message with /app/sendMessage
 
         registry.enableSimpleBroker("/topic");  //topic/chatRoom1
         registry.setApplicationDestinationPrefixes("/app");
