@@ -67,7 +67,7 @@
             sender: sender,
             content: content
           }
-          stompClient.send("app/sendMessage", {}, JSON.stringify(chatMessage));
+          stompClient.send("/app/sendMessage", {}, JSON.stringify(chatMessage));
           document.getElementById('messageInput').value= '';
          }
 
